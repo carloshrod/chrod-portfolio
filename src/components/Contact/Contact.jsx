@@ -34,7 +34,7 @@ const Contact = () => {
             return false;
         }
 
-        fetch("https://formsubmit.co/ajax/3d7ea3a327b8368be4ae3fbc017caf2b",{
+        fetch("https://formsubmit.co/ajax/3702f78ca0e155db85eb4c62d886ab6f",{
             method: 'POST',
             body: JSON.stringify(form),
             headers: { 
