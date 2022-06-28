@@ -41,7 +41,7 @@ const About = () => {
                 </button>
             </div>
             <div className="d-flex justify-content-center align-items-center">
-                <div className="about-card row col-8 text-center">
+                <div className="about-icons-card row col-8 text-center">
                     {icons.map((icon, index) => (
                         <div key={index} className="col">
                             <i className={icon.fa} />

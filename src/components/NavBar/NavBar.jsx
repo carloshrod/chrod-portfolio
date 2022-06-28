@@ -6,19 +6,16 @@ const navItems = [
         id: "1",
         label: "About",
         to: "about",
-        offSet: -80
     },
     {
         id: "2",
         label: "Projects",
         to: "projects",
-        offSet: 0
     },
     {
         id: "3",
         label: "Contact",
         to: "contact",
-        offSet: -80
     }
 ]
 
@@ -43,7 +40,7 @@ const NavBar = ({ isScrolling }) => {
                                 className="nav-link"
                                 to={item.to} spy={true}
                                 smooth={true}
-                                offset={-80}
+                                offset={-75}
                                 duration={200}
                             >
                                 {item.label}
