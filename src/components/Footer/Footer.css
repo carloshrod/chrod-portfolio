@@ -1,0 +1,110 @@
+.footer {
+    height: 75vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding-top: 180px;
+    position: fixed;
+    z-index: -2;
+    bottom: 0;
+    left: 0;
+}
+
+@media only screen and (max-width: 480px) {
+    .footer {
+        height: 55vh;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .footer-col .social-links a {
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+    }
+}
+
+.linkedin,
+.github,
+.instagram {
+    color: white;
+    font-size: 25px;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    border-bottom: 4px solid transparent;
+}
+
+.linkedin:hover,
+.github:hover,
+.instagram:hover {
+    border-color: white;
+    transition: all 0.3s ease-out;
+}
+
+.footer-col {
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    background-color: #ffffff;
+    height: 3px;
+    box-sizing: border-box;
+    width: 303px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li p {
+    font-size: 14px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color: #d4d4d4;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 20px 10px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+.back-to-top i {
+    color: white-color;
+    margin: 1rem 0 default-font-size;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}

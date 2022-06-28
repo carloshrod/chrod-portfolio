@@ -1,0 +1,138 @@
+.my-projects-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    vertical-align: center;
+    align-items: center;
+    background-color: black;
+    padding: 30px 0 30px 0;
+}
+
+.my-projects-title {
+    color: white;
+    width: 30%;
+    text-align: center;
+    padding: 0 100px 0 100px;
+    margin-right: 50px
+}
+
+.carousel-container {
+    width: 50%;
+    padding: 35px 10px 35px 10px;
+}
+
+.slide-container {
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.slide-container>img {
+    object-fit: contain;
+    transition: all 0.2s ease-in-out;
+}
+
+.slide-container:hover>img {
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+.slide-title {
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+    /* padding-left: 30px; */
+    border-top-left-radius: 20px;
+    opacity: 0.8;
+}
+
+.slide-title>span {
+    color: white;
+    display: block;
+    font-size: 22px;
+    padding: 20px 0 30px 10px;
+}
+
+.slide-links {
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    margin-top: -25px;
+    opacity: 0
+}
+
+.slide-container:hover>.slide-links {
+    opacity: 1
+}
+
+.slide-links>span {
+    color: white;
+    text-align: justify;
+    display: block;
+    font-size: 20px;
+    padding: 0 50px 0 50px;
+}
+
+.slide-links .link {
+    display: grid;
+    direction: column;
+    padding-top: 10px;
+}
+
+.slide-links .link>a {
+    display: inline-block;
+    position: relative;
+    color: white;
+    margin: auto;
+    /* padding: 10px; */
+    transition: all 0.1s;
+}
+
+.slide-links .link.frtd>a:hover::after,
+.slide-links .link.bckd>a:hover::after {
+    content: attr(data-content);
+    font-size: 14px;
+    position: absolute;
+    top: 90%;
+    left: -40%;
+}
+
+.slide-links .link.project>a:hover::after {
+    content: attr(data-content);
+    font-size: 14px;
+    position: absolute;
+    top: 90%;
+    left: -25%;
+}
+
+.control-dots {
+    right: 0;
+    width: 70% !important;
+}
+
+@media only screen and (max-width: 960px) {
+    .my-projects-container {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .my-projects-title {
+        width: 100%;
+        text-align: center;
+        margin: 40px 0 0 0
+    }
+
+    .carousel-container {
+        width: 100%;
+        margin: 20px 0 40px 0;
+    }
+
+    .slide-container {
+        height: 100%;
+    }
+}
