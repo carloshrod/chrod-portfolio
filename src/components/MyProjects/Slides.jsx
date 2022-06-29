@@ -9,7 +9,7 @@ const slidesInfo = [
         bckdUrl: "https://github.com/CarlosHdzR/predial-backend"
     },
     {
-        src: "https://res.cloudinary.com/chrod90/image/upload/v1656536767/project-captures/screenshot-portfolio_a21r83.jpg",
+        src: "https://res.cloudinary.com/chrod90/image/upload/v1656537075/project-captures/screenshot-portfolio_csfadt.jpg",
         title: "My Portfolio",
         frtdUrl: "https://github.com/CarlosHdzR/chrod-portfolio",
         projectUrl: "https://chrod-portfolio.netlify.app/",
