@@ -25,7 +25,7 @@ const NavBar = ({ isScrolling }) => {
         }
     ]
 
-    const logo = "https://res.cloudinary.com/chrod90/image/upload/v1656525814/chrod/logo-chrod-2_mt3x7e.png"
+    const logo = "https://res.cloudinary.com/chrod90/image/upload/v1656531147/chrod/logo-chrod-2_xocwhq.png"
 
     return (
         <nav className={`navbar navbar-expand ${isScrolling > 300 ? "scrolling" : null}`}>
