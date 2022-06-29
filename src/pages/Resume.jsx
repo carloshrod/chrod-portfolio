@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect } from 'react';
 
 const Resume = () => {
 
@@ -30,4 +30,4 @@ const Resume = () => {
     )
 }
 
-export default Resume
+export default Resume;

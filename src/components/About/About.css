@@ -56,7 +56,6 @@
     .about-container {
         flex-direction: column;
         padding: 0;
-        height: auto;
     }
 
     .about-desc {
@@ -79,7 +78,6 @@
     }
 }
 
-/* From uiverse.io by @barisdogansutcu */
 .download-button {
     width: 100px;
     position: relative;

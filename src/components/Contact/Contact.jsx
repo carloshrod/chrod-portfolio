@@ -52,10 +52,10 @@ const Contact = () => {
                 <h2>Contact</h2>
                 <p>
                     Would you like to work with me? <i className={
-                        `fa-regular fa-hand-point-${window.screen.width >= 760
+                        `fa-regular fa-hand-point-${window.screen.width > 960
                             ?
-                            "right fa-beat"
-                            : "down fa-beat"}`}
+                            "right fa-bounce"
+                            : "down fa-bounce"}`}
                     />
                 </p>
             </div>

@@ -15,7 +15,7 @@
     padding: 0 50px 0 100px;
 }
 
-.contact-desc > h2 {
+.contact-desc>h2 {
     color: black;
     font-weight: bold;
 }
@@ -33,10 +33,16 @@
     }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 767px) {
+    .contact-form {
+        padding: 40px !important;
+    }
+}
+
+@media only screen and (max-width: 960px) {
     .contact-container {
-        height: auto;
         flex-direction: column;
+        justify-content: center;
     }
 
     .contact-title {
@@ -49,29 +55,31 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        padding: 30px 0 0 0;
+        padding: 0;
     }
 
     .contact-form {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 40px 20px 40px 20px;
-    }
-
-    .contact>h1 {
-        text-align: center;
-        font-size: 25px;
-    }
-}
-@media only screen and (max-width: 960px) {
-    .contact-container {
-        height: auto;
+        padding: 40px 150px;
     }
 }
 
+@media only screen and (min-width: 1367px) {
+    .contact-desc {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 50px 0 250px;
+    }
 
-/* From uiverse.io by @adamgiebl */
+    .contact-form {
+        padding: 40px 250px;
+    }
+}
+
 .input-wrapper input,
 textarea {
     background-color: #eee;
@@ -91,7 +99,6 @@ textarea:focus {
     outline-color: black;
 }
 
-/* From uiverse.io by @alexroumi */
 .input-wrapper>button {
     padding: 15px 30px;
     border: unset;

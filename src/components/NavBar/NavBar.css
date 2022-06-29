@@ -5,7 +5,8 @@
     width: 100%;
     height: 80px;
     font-size: 16px;
-    z-index: 1;
+    z-index: 999;
+    padding: 0 3rem;
 }
 
 .scrolling {
@@ -27,8 +28,9 @@
     font-size: 1.2rem;
     cursor: pointer;
     color: white;
-    margin: 1rem;
+    margin: 1rem 0 1rem 3rem;
     padding: 0 !important;
+    border-bottom: 0.2rem solid transparent !important;
 }
 
 .nav-link:hover {
@@ -37,8 +39,15 @@
 }
 
 .nav-link.active {
-    padding-bottom: 5px !important;
-    border-bottom: 2px solid
+    border-bottom: 0.2rem solid !important;
+}
+
+.toggle-btn {
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+    display: none;
 }
 
 @media only screen and (max-width: 480px) {
@@ -52,5 +61,59 @@
         color: white;
         margin: 0.5rem;
         padding: 0 !important;
-    }    
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar {
+        padding: 0 1rem;
+    }
+
+    .navbar-nav {
+        display: none;
+    }
+
+    #hidden.navbar-nav {
+        display: flex;
+        position: absolute;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+        left: 0px;
+        top: 80px;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.96);
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .nav-link {
+        font-size: 2rem;
+        margin: 2rem !important;
+    }
+
+    .nav-link.active {
+        border-bottom: 0.2rem solid transparent !important;
+    }
+
+    .nav-link:hover {
+        font-weight: normal;
+        border-bottom: 0.2rem solid !important;
+    }
+
+    .btn-show-links {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1367px) {
+    .navbar {
+        padding: 0 5rem;
+    }
+
+    .nav-link {
+        margin: 1rem 0 1rem 5rem;
+        padding: 0 !important;
+    }
 }

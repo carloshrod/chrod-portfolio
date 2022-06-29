@@ -1,9 +1,9 @@
 .footer {
-    height: 75%;
+    height: 70vh;
     width: 100%;
     background-color: black;
     color: white;
-    padding-top: 15%;
+    padding-top: 30vh;
     position: fixed;
     z-index: -2;
     bottom: 0;
@@ -12,28 +12,7 @@
 
 @media only screen and (max-width: 480px) {
     .footer {
-        height: 55%;
-        padding-top: 45%;
-    }
-}
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-    .footer {
-        height: 60%;
-        padding-top: 35%;
-    }
-
-    .footer-col .social-links a {
-        height: 30px;
-        width: 30px;
-        line-height: 30px;
-    }
-}
-
-@media only screen and (min-width: 1367px) {
-    .footer {
-        height: 60%;
-        padding-top: 15%;
+        padding-top: 35vh;
     }
 }
 
