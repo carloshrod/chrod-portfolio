@@ -2,14 +2,14 @@
 
 const slidesInfo = [
     {
-        src: "https://res.cloudinary.com/chrod90/image/upload/v1656373926/project-captures/screenshot-predial_dmbeoz.png",
+        src: "https://res.cloudinary.com/chrod90/image/upload/v1656537056/project-captures/screenshot-predial_svdx1i.jpg",
         title: "Plataforma de Gestión Catastral",
         frtdUrl: "https://github.com/CarlosHdzR/predial-frontend",
         projectUrl: "https://gestion-catastral.netlify.app/",
         bckdUrl: "https://github.com/CarlosHdzR/predial-backend"
     },
     {
-        src: "https://res.cloudinary.com/chrod90/image/upload/v1656374301/project-captures/screenshot-portfolio_mlz91v.png",
+        src: "https://res.cloudinary.com/chrod90/image/upload/v1656536767/project-captures/screenshot-portfolio_a21r83.jpg",
         title: "My Portfolio",
         frtdUrl: "https://github.com/CarlosHdzR/chrod-portfolio",
         projectUrl: "https://chrod-portfolio.netlify.app/",

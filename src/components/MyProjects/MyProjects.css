@@ -12,13 +12,13 @@
     color: white;
     width: 30%;
     text-align: center;
-    padding: 0 100px 0 100px;
+    padding: 0 100px;
     margin-right: 50px
 }
 
 .carousel-container {
     width: 50%;
-    padding: 35px 10px 35px 10px;
+    padding: 0 40px;
 }
 
 .slide-container {
@@ -146,12 +146,12 @@
     .my-projects-title {
         width: 100%;
         text-align: center;
-        margin: 40px 0 0 0
+        margin-right: 0;
     }
 
     .carousel-container {
         width: 75%;
-        margin: 0 0 40px 0;
+        padding: 35px 10px;
     }
 
     .slide-container {
