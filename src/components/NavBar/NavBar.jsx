@@ -48,7 +48,7 @@ const NavBar = ({ isScrolling }) => {
                                 className="nav-link"
                                 to={item.to} spy={true}
                                 smooth={true}
-                                offset={-75}
+                                offset={-80}
                                 duration={200}
                                 onClick={() => setShowLinks(false)}
                             >
