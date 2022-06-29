@@ -18,10 +18,22 @@
     font-size: 1.5rem;
     color: white;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar-brand img {
+    height: 40px;
+    margin: auto;
+}
+
+.navbar-brand i {
+    padding: 0 .5rem;
+    transform: translateY(3px); 
 }
 
 .navbar-brand:hover {
     color: white;
+    transform: scale(0.95)
 }
 
 .nav-link {
