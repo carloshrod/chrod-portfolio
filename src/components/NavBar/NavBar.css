@@ -28,7 +28,7 @@
 
 .navbar-brand i {
     padding: 0 .5rem;
-    transform: translateY(3px); 
+    vertical-align: middle;
 }
 
 .navbar-brand:hover {
@@ -57,9 +57,12 @@
 .toggle-btn {
     color: white;
     font-size: 20px;
-    margin: 10px;
     cursor: pointer;
     display: none;
+}
+
+.toggle-btn i {
+    vertical-align: middle;
 }
 
 @media only screen and (max-width: 480px) {
