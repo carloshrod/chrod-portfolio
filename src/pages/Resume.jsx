@@ -12,16 +12,16 @@ const Resume = () => {
     return (
         <div className="position-absolute w-100 h-100">
             <object
-                data={require('../docs/carlosh-resume.pdf')}
+                data={require('../docs/chrod-resume.pdf')}
                 type="application/pdf"
                 height="100%"
                 width="100%"
             >
                 <a
                     className="text-decoration-none text-dark p-5"
-                    href={require('../docs/carlosh-resume.pdf')}
+                    href={require('../docs/chrod-resume.pdf')}
                     id="downloadPdf"
-                    download="carlosh-resume.pdf"
+                    download="chrod-resume.pdf"
                 >
                     <h1>Descargando PDF!!!</h1>
                 </a>
