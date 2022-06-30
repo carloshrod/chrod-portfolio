@@ -13,7 +13,7 @@ const MyProjects = () => {
             </div>
             <div className="carousel-container">
                 <Carousel
-                    // autoPlay
+                    autoPlay
                     interval={10000}
                     showThumbs={false}
                     showStatus={false}
