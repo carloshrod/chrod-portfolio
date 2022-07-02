@@ -22,10 +22,10 @@ const Footer = () => {
                             </span>
                         </div>
                         <div className="text-center">
-                            <a href="https://www.linkedin.com/in/carlos-hdz-r/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/in/chrod/" target="_blank" rel="noopener noreferrer">
                                 <i className="fa-brands fa-linkedin linkedin" />
                             </a>
-                            <a href="https://github.com/CarlosHdzR" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/carloshrod" target="_blank" rel="noopener noreferrer">
                                 <i className="fa-brands fa-github github" />
                             </a>
                             <a href="https://www.instagram.com/carloshr90/" target="_blank" rel="noopener noreferrer">
