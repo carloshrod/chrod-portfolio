@@ -4,3 +4,17 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+
+.my-toast-container {
+  margin-top: 90px;
+}
+
+.my-toast {
+  background-color: rgba(0, 0, 0, 0.96) !important;
+}
+
+@media only screen and (max-width: 960px) {
+  .my-toast-container {
+    margin-top: 75px;
+  }  
+}

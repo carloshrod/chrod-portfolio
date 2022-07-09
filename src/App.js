@@ -14,7 +14,13 @@ function App() {
           <Route path="/resume" element={<Resume />} />
         </Routes>
       </Router>
-      <ToastContainer position="top-center" newestOnTop theme="dark" />
+      <ToastContainer
+        className="my-toast-container"
+        toastClassName="my-toast"
+        position="top-center"
+        newestOnTop
+        theme="dark"
+      />
     </>
   );
 }
