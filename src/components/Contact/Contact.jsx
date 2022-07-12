@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import LanguageContext from '../../context/LanguageContext';
 import './Contact.css';
 import { toast } from "react-toastify";
 import { sendMail } from './sendMail';
@@ -12,7 +13,8 @@ const initialForm = {
 let regexEmail = /^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$/;
 
 const Contact = () => {
-    const [form, setForm] = useState(initialForm)
+    const { texts } = useContext(LanguageContext);
+    const [form, setForm] = useState(initialForm);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -41,9 +43,9 @@ const Contact = () => {
     return (
         <div className="contact-container" id="contact">
             <div className="contact-desc">
-                <h2>Contact</h2>
+                <h2>{texts.contactLabel}</h2>
                 <p>
-                    Would you like to work with me? <i className={
+                    {texts.contactDesc} <i className={
                         `fa-regular fa-hand-point-${window.screen.width > 960
                             ?
                             "right fa-bounce"
@@ -55,25 +57,25 @@ const Contact = () => {
                 <form className="row g-3 justify-content-center" onSubmit={handleSubmit} noValidate>
                     <div className="input-wrapper">
                         <input
-                            className="input" name="email" placeholder="Email" type="email"
+                            className="input" name="email" placeholder={texts.placeholder1} type="email"
                             onChange={handleChange} value={form.email}
                         />
                     </div>
                     <div className="input-wrapper">
                         <input
-                            className="input" name="subject" placeholder="Subject" type="text"
+                            className="input" name="subject" placeholder={texts.placeholder2} type="text"
                             onChange={handleChange} value={form.subject}
                         />
                     </div>
                     <div className="input-wrapper">
                         <textarea
-                            className="input" name="message" rows="5" placeholder="Message" type="text"
-                            onChange={handleChange} value={form.message}
+                            className="input" name="message" rows="5" placeholder={texts.placeholder3}
+                            type="text" onChange={handleChange} value={form.message}
                         />
                     </div>
                     <div className="input-wrapper">
                         <button type="submit">
-                            Send
+                            {texts.formBtnLabel}
                         </button>
                     </div>
                 </form>
@@ -82,4 +84,4 @@ const Contact = () => {
     )
 }
 
-export default Contact
+export default Contact;

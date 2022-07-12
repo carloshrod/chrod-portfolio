@@ -1,6 +1,9 @@
+import { useContext } from "react";
+import LanguageContext from "../../context/LanguageContext";
 import './About.css';
 
 const About = () => {
+    const { texts } = useContext(LanguageContext)
 
     const icons = [
         { fa: "fa-brands fa-js-square fa-bounce" },
@@ -11,23 +14,18 @@ const About = () => {
         { fa: "fa-brands fa-git fa-fade" }
     ]
 
-
     return (
         <div className="about-container" id="about">
             <div className="about-desc">
-                <h2>About me </h2>
+                <h2>{texts.aboutLabel}</h2>
                 <p>
-                    <i className="fa-solid fa-hand fa-shake" />
-                    Hello, I'm a web developer based on Barranquilla, Colombia. I have great troubleshooting
-                    skills, teamwork and I'm a quick learner. I have a degree in Telematics Engineering, but
-                    I am currently focused on web development, specifically on React. I would like to learn
-                    other JS frameworks as Angular or Vue. I also have basic knowledge about Node.js and
-                    MongoDB and I would like to delve deeper into these technologies.
+                    <i className="fa-solid fa-hand fa-shake me-1" />
+                    {texts.aboutDesc}
                 </p>
                 <button className="download-button">
                     <div className="docs">
-                        <i className="fa-solid fa-file"></i>
-                        Resume
+                        <i className="fa-solid fa-file" />
+                        {texts.aboutBtnLabel}
                     </div>
                     <a href="./resume" target="_blank">
                         <div className="download">

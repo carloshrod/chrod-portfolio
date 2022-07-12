@@ -79,7 +79,7 @@
 }
 
 .download-button {
-    width: 100px;
+    width: 140px;
     position: relative;
     border-width: 0;
     color: white;
@@ -92,7 +92,7 @@
 .download-button .docs {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 10px;
     min-height: 40px;
     padding: 0 10px;
@@ -113,7 +113,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 70%;
+    max-width: 40%;
     margin: 0 auto;
     z-index: -1;
     border-radius: 4px;

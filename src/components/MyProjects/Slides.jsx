@@ -1,6 +1,6 @@
 import { slidesInfo } from "./slidesInfo";
 
-const slides = slidesInfo.map((slide, index) => (
+const Slides = slidesInfo.map((slide, index) => (
     <div key={index} className="slide-container">
         <img className="img-fluid" src={slide.src} alt={slide.title} />
         <div className="slide-links">
@@ -33,4 +33,4 @@ const slides = slidesInfo.map((slide, index) => (
     </div>
 ));
 
-export default slides;
+export default Slides;

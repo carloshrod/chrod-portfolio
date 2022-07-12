@@ -1,26 +1,28 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import LanguageContext from "../../context/LanguageContext";
 import './NavBar.css';
 import { Link } from 'react-scroll';
 import ToggleBtn from "./ToggleBtn";
-
+import ToggleLanguage from "./ToggleLanguage";
 
 const NavBar = ({ isScrolling }) => {
-    const [showLinks, setShowLinks] = useState(false)
-    
+    const { texts } = useContext(LanguageContext);
+    const [showLinks, setShowLinks] = useState(false);
+
     const navItems = [
         {
             id: "1",
-            label: "About",
+            label: texts.aboutLabel,
             to: "about",
         },
         {
             id: "2",
-            label: "Projects",
+            label: texts.projectsLabel,
             to: "projects",
         },
         {
             id: "3",
-            label: "Contact",
+            label: texts.contactLabel,
             to: "contact",
         }
     ]
@@ -38,10 +40,10 @@ const NavBar = ({ isScrolling }) => {
                     offset={0}
                     duration={200}
                 >
-                    <img src={logo} alt="chrod-logo"/>
+                    <img src={logo} alt="chrod-logo" />
                     <i className="fa-solid fa-terminal fa-fade" />
                 </Link>
-                <ul className="navbar-nav active" id={showLinks ? "hidden" : ""}>
+                <ul className="navbar-nav active s-auto" id={showLinks ? "hidden" : ""}>
                     {navItems.map((item) => (
                         <li key={item.id} className="nav-item">
                             <Link
@@ -57,10 +59,11 @@ const NavBar = ({ isScrolling }) => {
                         </li>
                     ))}
                 </ul>
+                <ToggleLanguage />
                 <ToggleBtn showLinks={showLinks} setShowLinks={setShowLinks} />
             </div>
         </nav>
     )
 }
 
-export default NavBar
+export default NavBar;

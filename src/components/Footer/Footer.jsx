@@ -1,7 +1,11 @@
+import { useContext } from 'react';
+import LanguageContext from '../../context/LanguageContext';
 import './Footer.css';
 import { Link } from 'react-scroll';
 
 const Footer = () => {
+    const { texts } = useContext(LanguageContext);
+
     return (
         <footer className="footer">
             <div className="container">
@@ -11,7 +15,7 @@ const Footer = () => {
                             <span className="back-to-top">
                                 <Link
                                     className="mb-4"
-                                    to={"hero"} 
+                                    to={"hero"}
                                     spy={true}
                                     smooth={true}
                                     offset={0}
@@ -33,11 +37,10 @@ const Footer = () => {
                             </a>
                         </div>
                         <div className="text-center">
-                            <h4>Designed by <b>Carlos Hernández R.</b></h4>
+                            <h4>{texts.footerLabel} <b>Carlos Hernández R.</b></h4>
                         </div>
                     </div>
                 </div>
-
                 <div className="row">
                     <hr />
                     <p style={{ fontSize: 10 }}>
@@ -49,4 +52,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default Footer;

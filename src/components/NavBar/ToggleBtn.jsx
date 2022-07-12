@@ -1,4 +1,4 @@
-function ToggleBtn({ showLinks, setShowLinks }) {
+const ToggleBtn = ({ showLinks, setShowLinks }) => {
     return (
         <div className="toggle-btn btn-show-links"
             onClick={() => setShowLinks(!showLinks)}>
