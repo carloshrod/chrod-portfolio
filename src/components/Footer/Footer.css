@@ -10,12 +10,6 @@
     left: 0;
 }
 
-@media only screen and (max-width: 480px) {
-    .footer {
-        padding-top: 35vh;
-    }
-}
-
 .linkedin,
 .github,
 .instagram {
@@ -23,7 +17,7 @@
     font-size: 25px;
     margin: 0 auto;
     padding-bottom: 5px;
-    border-bottom: 4px solid transparent;
+    border-bottom: 0.2rem solid transparent;
 }
 
 .linkedin:hover,
@@ -35,23 +29,6 @@
 
 .footer-col {
     padding: 0 15px;
-}
-
-.footer-col h4 {
-    font-size: 18px;
-    color: #ffffff;
-    margin-bottom: 35px;
-    position: relative;
-}
-
-.footer-col h4::before {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    background-color: #ffffff;
-    height: 3px;
-    box-sizing: border-box;
-    width: 303px;
 }
 
 .footer-col ul {
@@ -99,4 +76,20 @@
     margin: 1rem 0 default-font-size;
     transition: all 0.2s ease-in;
     cursor: pointer;
+}
+
+.design-by {
+    font-size: 18px;
+    color: white;
+    width: auto;
+    padding: 0;
+    margin: auto;
+    margin-bottom: 2rem;
+    border-bottom: 0.2rem solid white;
+}
+
+@media only screen and (max-width: 480px) {
+    .footer {
+        padding-top: 35vh;
+    }
 }

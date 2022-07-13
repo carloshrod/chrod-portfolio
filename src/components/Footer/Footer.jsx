@@ -36,9 +36,11 @@ const Footer = () => {
                                 <i className="fa-brands fa-instagram instagram" />
                             </a>
                         </div>
-                        <div className="text-center">
-                            <h4>{texts.footerLabel} <b>Carlos Hernández R.</b></h4>
-                        </div>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="design-by">
+                        {texts.footerLabel} <b>Carlos Hernández R.</b>
                     </div>
                 </div>
                 <div className="row">
