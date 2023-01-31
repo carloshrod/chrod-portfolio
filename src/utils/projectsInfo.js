@@ -38,7 +38,7 @@ export const projectsInfo = [
     {
         src: "https://res.cloudinary.com/chrod90/image/upload/v1674769783/project-captures/screenshot-crypto-app_clszxf.jpg",
         title: "React App - CoinGecko API: ",
-        description: "Vite, Hooks, Context API, SCSS, Fetch API, React-Spinners.",
+        description: "Vite, Hooks, Context API, SCSS, Bootstrap, Fetch API, React-Spinners.",
         link1: {
             label: "Frontend",
             url: "https://github.com/carloshrod/chrod-crypto-app",
