@@ -1,0 +1,133 @@
+.about-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 0 3rem;
+    .about-desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+        width: 50%;
+        h2 {
+            color: black;
+            font-weight: bold;
+        }
+        p {
+            line-height: 1.7;
+        }
+        .download-button {
+            width: 140px;
+            position: relative;
+            border-width: 0;
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 4px;
+            z-index: 1;
+            &:hover {
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            }    
+            .docs {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                min-height: 40px;
+                padding: 0 10px;
+                border-radius: 4px;
+                z-index: 1;
+                background-color: black;
+                transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+            }
+            a {
+                .download {
+                    color: black;
+                    position: absolute;
+                    inset: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    max-width: 40%;
+                    margin: 0 auto;
+                    z-index: -1;
+                    border-radius: 4px;
+                    transform: translateY(0%);
+                    background-color: white;
+                    border: solid 1px black;
+                    transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+                    @keyframes docs {
+                        0% {
+                            transform: translateY(0%);
+                        }
+                    
+                        50% {
+                            transform: translateY(-15%);
+                        }
+                    
+                        100% {
+                            transform: translateY(0%);
+                        }
+                    }
+                    svg polyline,
+                    svg line {
+                        animation: docs 1s infinite;
+                    }                    
+                }                
+            }
+            &:hover > a > .download {
+                transform: translateY(100%)
+            }          
+        }        
+    }
+    .about-icons {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        gap: 4rem 3rem;
+        justify-content: center;
+        text-align: center;
+        width: 50%;
+        i {
+            color: black;
+            font-size: 50px;
+        }            
+    }
+    @media (max-width: 960px) {
+        flex-direction: column;
+        gap: 3rem;
+        padding: 0;
+        .about-desc {
+            width: 90%;
+            margin: 0 auto;
+            h2 {
+                text-align: center;
+            }
+        }
+    }
+    @media (max-width: 500px) {
+        .about-icons {
+            gap: 1rem;
+        }
+    }
+    @media (max-width: 375px) and (max-height: 740px) {
+        gap: 2rem;
+        .about-desc {
+            padding: 0.5rem 0.5rem;
+            p {
+                line-height: 1.5;
+            }
+        }
+        .about-icons {
+            i {
+                font-size: 40px;
+            }        
+        }
+    }
+    @media (min-width: 1368px) {
+        padding: 0 10rem;
+    }
+}

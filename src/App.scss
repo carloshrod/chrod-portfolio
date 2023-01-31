@@ -1,0 +1,17 @@
+// ********** Abstracts **********
+@use './sass/abstracts/variables';
+
+// ********** Base **********
+@use './sass/base/base';
+@use './sass/base/resets';
+
+// ********** Components **********
+@use './sass/components/Navbar';
+@use './sass/components/ToggleBtn';
+@use './sass/components/ToggleLanguage';
+@use './sass/components/Cover';
+@use './sass/components/About';
+@use './sass/components/MyProjects';
+@use './sass/components/Slides';
+@use './sass/components/Contact';
+@use './sass/components/Footer';

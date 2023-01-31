@@ -1,0 +1,9 @@
+export { default as Navbar } from './Navbar';
+export { default as ToggleBtn } from './ToggleBtn';
+export { default as ToggleLanguage } from './ToggleLanguage';
+export { default as Cover } from './Cover';
+export { default as About } from './About';
+export { default as MyProjects } from './MyProjects';
+export { default as Slides } from './Slides';
+export { default as Contact } from './Contact';
+export { default as Footer } from './Footer';

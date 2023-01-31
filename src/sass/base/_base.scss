@@ -1,0 +1,15 @@
+body {
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+}
+
+.my-toast-container {
+    margin-top: 90px;
+    @media only screen and (max-width: 960px) {
+        margin-top: 75px;
+    }
+}
+
+.my-toast {
+    background-color: rgba(0, 0, 0, 0.96) !important;
+}

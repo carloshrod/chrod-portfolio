@@ -1,0 +1,57 @@
+.my-projects-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 0 3rem;
+    position: relative;
+    .my-projects-title {
+        color: white;
+        display: grid;
+        grid-auto-flow: column;
+        h2 {
+            margin: auto;
+        }
+        i {
+            margin: auto;
+            padding-left: 5px;
+        }
+    }
+    .swiper {
+        width: 80%;
+        max-width: 600px;
+        &-wrapper {
+            .swiper-slide {
+                &-active {
+                    z-index: 99;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 975px) {
+        flex-direction: column;
+        padding: 0;
+        .swiper {
+            width: 95%;
+        }    
+        .my-projects-title {
+            padding: 0;
+            padding-bottom: 2rem;
+        }
+    }
+    @media (min-width: 1368px) {
+        padding: 0 10rem;
+    }
+    @media (min-width: 1368px) and (max-width: 1600px) {
+        .swiper {
+            max-width: 950px;
+        }
+    }
+    @media (min-width: 1600px) {
+        .swiper {
+            max-width: 1150px;
+        }
+    }    
+}

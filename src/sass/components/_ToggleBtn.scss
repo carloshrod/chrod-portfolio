@@ -1,0 +1,12 @@
+.toggle-btn {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    i {
+        vertical-align: middle;
+    }
+    @media (max-width: 767px) {
+        display: block;
+    }
+}
