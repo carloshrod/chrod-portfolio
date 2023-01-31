@@ -1,4 +1,4 @@
-export { default as Navbar } from './Navbar';
+export { default as Navbar } from './NavBar';
 export { default as ToggleBtn } from './ToggleBtn';
 export { default as ToggleLanguage } from './ToggleLanguage';
 export { default as Cover } from './Cover';
