@@ -42,7 +42,7 @@ const Footer = () => {
                 <div className="copyrights row">
                     <hr />
                     <p>
-                        &copy;{new Date().getFullYear()} <span>Chrod</span> &nbsp;|&nbsp; All rights reserved
+                        &copy;{new Date().getFullYear()} <span>CHRod</span> &nbsp;|&nbsp; All rights reserved
                     </p>
                 </div>
             </div>
