@@ -96,6 +96,16 @@
             font-size: 50px;
         }            
     }
+    @media (max-width: 350px) {
+        height: auto;
+        padding: 1rem 0 !important;
+    }
+    @media (max-width: 500px) {
+        .about-icons {
+            gap: 1rem;
+            grid-template-columns: repeat(3, 80px);
+        }
+    }
     @media (max-width: 960px) {
         flex-direction: column;
         gap: 3rem;
@@ -108,10 +118,8 @@
             }
         }
     }
-    @media (max-width: 500px) {
-        .about-icons {
-            gap: 1rem;
-        }
+    @media (min-width: 1368px) {
+        padding: 0 10rem;
     }
     @media (max-width: 375px) and (max-height: 740px) {
         gap: 2rem;
@@ -126,8 +134,5 @@
                 font-size: 40px;
             }        
         }
-    }
-    @media (min-width: 1368px) {
-        padding: 0 10rem;
     }
 }

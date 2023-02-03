@@ -19,13 +19,16 @@
             padding-left: 5px;
         }
     }
-    .swiper {
-        width: 80%;
-        max-width: 600px;
-        &-wrapper {
-            .swiper-slide {
-                &-active {
-                    z-index: 99;
+    .swiperContainer {
+        width: 100%;
+        .swiper {
+            width: 80%;
+            max-width: 600px;
+            &-wrapper {
+                .swiper-slide {
+                    &-active {
+                        z-index: 99;
+                    }
                 }
             }
         }
@@ -33,9 +36,11 @@
     @media only screen and (max-width: 975px) {
         flex-direction: column;
         padding: 0;
-        .swiper {
-            width: 95%;
-        }    
+        .swiperContainer {
+            .swiper {
+                width: 95%;
+            }    
+        }
         .my-projects-title {
             padding: 0;
             padding-bottom: 2rem;
@@ -45,13 +50,17 @@
         padding: 0 10rem;
     }
     @media (min-width: 1368px) and (max-width: 1600px) {
-        .swiper {
-            max-width: 950px;
+        .swiperContainer {
+            .swiper {
+                max-width: 950px;
+            }
         }
     }
     @media (min-width: 1600px) {
-        .swiper {
-            max-width: 1150px;
+        .swiperContainer {
+            .swiper {
+                max-width: 1150px;
+            }
         }
     }    
 }

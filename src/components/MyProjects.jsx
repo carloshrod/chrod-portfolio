@@ -6,40 +6,56 @@ import 'swiper/scss';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
 import 'swiper/scss/effect-cube';
+import { motion } from "framer-motion";
 
 const MyProjects = () => {
     const { texts } = useLanguageContext()
 
     return (
         <div className="my-projects-container" id="projects">
-            <div className="my-projects-title">
-                <h2>{texts.projectsLabel}</h2>
-                <i className='bx bx-like bx-sm bx-tada' />
-            </div>
-            <Swiper
-                modules={[Navigation, Keyboard, Autoplay, EffectCube]}
-                spaceBetween={20}
-                slidesPerView={1}
-                style={{
-                    "--swiper-navigation-color": "#fff",
-                    "--swiper-navigation-size": "1.5rem",
-                    "--swiper-pagination-color": "#fff",
-                }}
-                navigation
-                keyboard={{
-                    enabled: true,
-                }}
-                autoplay={{
-                    delay: 5000,
-                    disableOnInteraction: false,
-                }}
-                loop={true}
-                effect="cube"
+            <motion.div
+                className="my-projects-title"
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ type: "spring", stiffness: 50 }}
+                viewport={{ once: true }}
             >
-                {Slides.map((slide, i) => (
-                    <SwiperSlide key={i}>{slide}</SwiperSlide>
-                ))}
-            </Swiper>
+                <h2
+                >{texts.projectsLabel}</h2>
+                <i className='bx bx-like bx-sm bx-tada' />
+            </motion.div>
+            <motion.div
+                className="swiperContainer"
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ delay: .3, type: "spring", stiffness: 50 }}
+                viewport={{ once: true }}
+            >
+                <Swiper
+                    modules={[Navigation, Keyboard, Autoplay, EffectCube]}
+                    spaceBetween={20}
+                    slidesPerView={1}
+                    style={{
+                        "--swiper-navigation-color": "#fff",
+                        "--swiper-navigation-size": "1.5rem",
+                        "--swiper-pagination-color": "#fff",
+                    }}
+                    navigation
+                    keyboard={{
+                        enabled: true,
+                    }}
+                    autoplay={{
+                        delay: 5000,
+                        disableOnInteraction: false,
+                    }}
+                    loop={true}
+                    effect="cube"
+                >
+                    {Slides.map((slide, i) => (
+                        <SwiperSlide key={i}>{slide}</SwiperSlide>
+                    ))}
+                </Swiper>
+            </motion.div>
         </div>
     );
 };

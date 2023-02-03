@@ -1,9 +1,10 @@
-import {  useState } from "react";
+import { useState } from "react";
 import { Link } from 'react-scroll';
 import { useLanguageContext } from "../hooks";
 import ToggleBtn from "./ToggleBtn";
 import ToggleLanguage from "./ToggleLanguage";
-import logo from '../assets/media/chrod-logo.png'
+import logo from '../assets/media/chrod-logo.png';
+import { motion } from "framer-motion";
 
 const NavBar = ({ isScrolling }) => {
     const { texts } = useLanguageContext();
@@ -26,8 +27,15 @@ const NavBar = ({ isScrolling }) => {
 
 
     return (
-        <nav className={`navbar navbar-expand ${isScrolling > 300 ? "scrolling" : null}`}>
-            <div className="container-fluid">
+        <motion.nav
+            className={`navbar navbar-expand ${isScrolling > 300 ? "scrolling" : null}`}
+            initial={{ y: "-100%" }}
+            animate={{ y: "0%" }}
+            transition={{ type: "spring", stiffness: 150 }}
+        >
+            <div
+                className="container-fluid"
+            >
                 <Link
                     className="navbar-brand"
                     to={"hero"}
@@ -58,7 +66,7 @@ const NavBar = ({ isScrolling }) => {
                 <ToggleLanguage />
                 <ToggleBtn showLinks={showLinks} setShowLinks={setShowLinks} />
             </div>
-        </nav>
+        </motion.nav>
     )
 }
 

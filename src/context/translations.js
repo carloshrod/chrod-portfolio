@@ -18,7 +18,7 @@ export const translations = {
             validateFields: "All fields are required!",
             validateEmail: "Please, enter a valid email!",    
         },
-        footerLabel: "Designed by"
+        footerLabel: "Developed by"
     },
     es: {
         aboutLabel: "Sobre mí",
@@ -39,6 +39,6 @@ export const translations = {
             validateFields: "Todos los campos son requeridos!",
             validateEmail: "Por favor, ingresa un email válido!",    
         },
-        footerLabel: "Diseñado por"
+        footerLabel: "Desarrollado por"
     }
 }

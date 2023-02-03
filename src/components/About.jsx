@@ -1,4 +1,5 @@
 import { useLanguageContext } from "../hooks";
+import { motion } from "framer-motion";
 
 const About = () => {
     const { texts, language } = useLanguageContext();
@@ -17,12 +18,28 @@ const About = () => {
     return (
         <div className="about-container" id="about">
             <div className="about-desc">
-                <h2>{texts.aboutLabel}</h2>
-                <p>
+                <motion.h2
+                    initial={{ opacity: 0, scale: 0 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ type: "spring", stiffness: 50 }}
+                    viewport={{ once: true }}
+                >{texts.aboutLabel}</motion.h2>
+                <motion.p
+                    initial={{ opacity: 0, scale: 0 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: .3, type: "spring", stiffness: 50 }}
+                    viewport={{ once: true }}
+                >
                     <i className="fa-solid fa-hand fa-shake me-1" />
                     {texts.aboutDesc}
-                </p>
-                <button className="download-button">
+                </motion.p>
+                <motion.button
+                    className="download-button"
+                    initial={{ opacity: 0, scale: 0 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: .6, type: "spring", stiffness: 50 }}
+                    viewport={{ once: true }}
+                >
                     <div className="docs">
                         <i className="fa-solid fa-file" />
                         {texts.aboutBtnLabel}
@@ -36,13 +53,19 @@ const About = () => {
                             </svg>
                         </div>
                     </a>
-                </button>
+                </motion.button>
             </div>
-            <div className="about-icons">
+            <motion.div
+                className="about-icons"
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ delay: .9, type: "spring", stiffness: 50 }}
+                viewport={{ once: true }}
+            >
                 {icons.map((icon, index) => (
                     <i key={index} className={icon.fa} />
                 ))}
-            </div>
+            </motion.div>
         </div>
     )
 }

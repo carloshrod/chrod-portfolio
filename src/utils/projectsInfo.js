@@ -48,14 +48,5 @@ export const projectsInfo = [
             url: "https://chrod-crypto.vercel.app/",
             icon: "bi bi-triangle"
         }
-    },
-    {
-        src: "https://res.cloudinary.com/chrod90/image/upload/v1675114415/project-captures/screenshot-portfolio_d3omoo.jpg",
-        title: "React Portfolio App: ",
-        description: "Vite, Hooks, Context API, React-Router, SCSS, Bootstrap, Fetch API, React-Spinners, React-Scroll, Swiper.",
-        link1: {
-            label: "Frontend",
-            url: "https://github.com/carloshrod/chrod-portfolio",
-        }
     }
 ];
