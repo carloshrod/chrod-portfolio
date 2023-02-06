@@ -6,6 +6,7 @@ Portfolio app developed with React.
 * Vite
 * React-Router
 * Context API
+* FormSubmit API
 * SCSS
 * Bootstrap
 * React-Scroll
