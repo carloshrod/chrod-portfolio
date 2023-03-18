@@ -2,7 +2,7 @@ export const projectsInfo = [
     {
         src: "https://res.cloudinary.com/chrod90/image/upload/v1674326685/project-captures/screenshot-predial_rml54n.jpg",
         title: "MERN Stack App (CRUD, Auth): ",
-        description: "Hooks, Context API, Reducers, React-Router, Bootstrap, Fetch API, JWT-decode, Bcryptjs, Chart.js, Express, MongoDb, Mongoose, Cloudinary, Jsonwebtoken, Nodemailer.",
+        description: "Hooks, Context API, Reducers, React-Router, Bootstrap, Fetch API, JWT-decode, Bcryptjs, Chart.js, Node, Express, MongoDb, Mongoose, Cloudinary, Jsonwebtoken, Nodemailer.",
         link1: {
             label: "Frontend",
             url: "https://github.com/carloshrod/predial-frontend"
@@ -20,7 +20,7 @@ export const projectsInfo = [
     {
         src: "https://res.cloudinary.com/chrod90/image/upload/v1674237674/project-captures/screenshot-movies-app_vfvwni.jpg",
         title: "PERN Stack App (CRUD): ",
-        description: "Vite, Hooks, Context API, React-Router, SCSS, axios, Express, PostgreSQL, Node-Postgres, Cloudinary.",
+        description: "Vite, Hooks, Context API, React-Router, SCSS, Axios, Node, Express, PostgreSQL, Node-Postgres, Cloudinary.",
         link1: {
             label: "Frontend",
             url: "https://github.com/carloshrod/movies-frontend",
