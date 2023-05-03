@@ -10,6 +10,7 @@
     text-align: center;
     padding: 0 2rem;
     color: white;
+
     .video {
         object-fit: cover;
         width: 100%;
@@ -17,31 +18,52 @@
         position: absolute;
         z-index: -1;
     }
+
     h1 {
         font-size: 75px;
     }
+
     span {
         display: block;
         font-size: 32px;
         white-space: nowrap;
         border-right: 3px solid;
-        width: 13ch;
-        animation: typing 2s steps(13), blink .5s infinite step-end alternate;
         overflow: hidden;
+
+        &.en {
+            width: 13ch;
+            animation: typing 2s steps(13), blink .5s infinite step-end alternate;
+        }
+
+        &.es {
+            width: 15ch;
+            animation: typing 2s steps(15), blink .5s infinite step-end alternate;
+        }
     }
+
     @keyframes typing {
-        from {width: 0};
+        from {
+            width: 0
+        }
+
+        ;
     }
+
     @keyframes blink {
-        50% {border-color: transparent};
+        50% {
+            border-color: transparent
+        }
+
+        ;
     }
 
     @media (max-width: 960px) {
         h1 {
             font-size: 50px;
         }
+
         span {
             font-size: 22px;
         }
-    }    
+    }
 }
