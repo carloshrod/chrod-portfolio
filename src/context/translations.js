@@ -5,7 +5,7 @@ export const translations = {
 		contactLabel: 'Contact',
 		coverSubtitle: 'Web Developer',
 		aboutDesc:
-			"Hello, I'm a web developer with great troubleshooting skills, teamwork and I'm a quick learner. I have a degree in Telematics Engineering, but I am currently focused on programming. I have experience working with technologies such as React.js, HTML and CSS in the client side, but I've worked in the server side as well with Node.js and SQL and NoSQL databases. I'm interested in learning another web development languages or frameworks.",
+			'Web developer with a degree in Telematics Engineering and currently focused on programming, with great troubleshooting skills, teamwork and quick learner. Experience working with JavaScript technologies on both client and server side, as well as other technologies for web development and SQL and NoSQL databases. Interested in learning another programming languages.',
 		aboutBtnLabel: 'Resumé',
 		contactDesc: 'Would you like to work with me?',
 		placeholder1: 'Email',
@@ -27,7 +27,7 @@ export const translations = {
 		contactLabel: 'Contacto',
 		coverSubtitle: 'Desarrollador Web',
 		aboutDesc:
-			'Hola, soy un desarrollador web con grandes habilidades para solucionar problemas, trabajo en equipo y facilidad de aprendizaje. Tengo un pregrado en Ingeniería Telemática, pero actualmente estoy centrado en la programación. Tengo experiencia trabajando con tecnologías como React.js, HTML y CSS en el lado del cliente, pero también he trabajado en el lado del servidor con Node.js y bases de datos SQL y NoSQL. Estoy interesado en aprender otros lenguajes o frameworks de desarrollo web.',
+			'Desarrollador web graduado en Ingeniería Telemática y actualmente centrado en la programación, con gran capacidad de resolución de problemas, trabajo en equipo y rápido aprendizaje. Experiencia trabajando con tecnologías JavaScript tanto del lado del cliente como del servidor, así como otras tecnologías para el desarrollo web y bases de datos SQL y NoSQL. Interesado en aprender otros lenguajes de programación.',
 		aboutBtnLabel: 'Currículum',
 		contactDesc: '¿Te gustaría trabajar conmigo?',
 		placeholder1: 'Correo electrónico',
