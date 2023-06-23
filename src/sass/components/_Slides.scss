@@ -3,15 +3,18 @@
     overflow: hidden;
     position: relative;
     cursor: grab;
+
     img {
         object-fit: contain;
         transition: all 0.2s ease-in-out;
         opacity: 0.5;
     }
-    &:hover > img {
+
+    &:hover>img {
         transform: scale(1.2);
         opacity: 0.5;
     }
+
     .slide-links {
         display: flex;
         justify-content: center;
@@ -21,6 +24,7 @@
         transform: translateY(-50%);
         width: 100%;
         opacity: 0;
+
         .link {
             display: grid;
             direction: column;
@@ -28,16 +32,19 @@
             width: 90%;
             max-width: 100px;
             padding-top: 21px;
+
             a {
                 display: inline-block;
                 position: relative;
                 color: white;
                 transition: all 0.1s;
                 margin: 0 auto;
-                &:hover + span {
+
+                &:hover+span {
                     opacity: 1 !important;
                 }
             }
+
             span {
                 color: white;
                 font-size: 14px;
@@ -46,9 +53,11 @@
             }
         }
     }
-    &:hover > .slide-links {
+
+    &:hover>.slide-links {
         opacity: 1
     }
+
     .slide-title {
         background-color: black;
         position: absolute;
@@ -58,46 +67,52 @@
         border-top-left-radius: 20px;
         opacity: 0;
         display: flex;
+        flex-direction: column;
+        align-items: center;
+
         h6 {
             text-align: justify;
             margin: auto;
             color: white;
             display: block;
             padding: 1rem 2rem;
-            span {
-                font-size: .7em;
-                font-weight: 300;
-            }
         }
     }
-    &:hover > .slide-title {
+
+    &:hover>.slide-title {
         opacity: 0.8
     }
+
     @media (max-width: 500px) {
         .slide-links {
             .link {
                 max-width: 70px;
-                a > i {
+
+                a>i {
                     font-size: 24px !important;
                 }
+
                 span {
                     font-size: 12px !important;
                 }
             }
         }
+
         .slide-title {
             width: 85%;
+
             h6 {
                 font-size: .6rem !important;
                 padding: .5rem 1rem;
             }
-        }    
+        }
     }
+
     @media (max-width: 760px) {
         .slide-title {
             h6 {
                 font-size: .8rem;
             }
-        }    
+        }
     }
 }
