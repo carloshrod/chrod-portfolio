@@ -7,50 +7,63 @@
     font-size: 1rem;
     z-index: 999;
     padding: 0 3rem;
+
     .navbar-brand {
         font-size: 1.5rem;
         color: white;
         cursor: pointer;
         transition: all 0.2s ease-in-out;
-    }   
+    }
+
     .navbar-brand img {
         height: 60px;
         margin: auto;
-    }    
+    }
+
     .navbar-brand i {
         padding: 0 .5rem;
         vertical-align: middle;
-    }    
+        text-shadow: 1px 1px 2px black;
+    }
+
     .navbar-brand:hover {
         color: white;
         transform: scale(0.95)
-    }    
+    }
+
     .navbar-nav {
         margin-left: auto;
+
         .nav-link {
             font-size: 1.2rem;
             cursor: pointer;
             color: white;
+            text-shadow: 1px 1px 2px black;
             margin: 1.2rem 0 1rem 3rem;
             padding: 0 !important;
             border-bottom: 0.2rem solid transparent !important;
+
             :hover {
                 color: white;
                 font-weight: bold;
-            } 
+            }
         }
+
         .active {
             border-bottom: 0.2rem solid !important;
-        }    
-    }   
+        }
+    }
+
     &.scrolling {
         background-color: rgba(0, 0, 0, 0.96);
         transition: all 0.5s ease;
     }
+
     @media (max-width: 480px) {
         .navbar-brand {
             font-size: 1.2rem;
         }
+
         .nav-link {
             font-size: 1rem;
             cursor: pointer;
@@ -59,11 +72,14 @@
             padding: 0 !important;
         }
     }
+
     @media (max-width: 767px) {
         padding: 0 1rem;
+
         .navbar-nav {
             display: none;
         }
+
         #hidden.navbar-nav {
             display: flex;
             position: absolute;
@@ -77,9 +93,11 @@
             background-color: rgba(0, 0, 0, 0.96);
             font-size: 18px;
             margin: 0;
+
             .nav-link {
                 font-size: 2rem;
                 margin: 2rem !important;
+
                 &:hover {
                     font-weight: normal;
                     border-bottom: 0.2rem solid !important;
@@ -87,6 +105,7 @@
             }
         }
     }
+
     @media (max-width: 830px) {
         .navbar-nav {
             .nav-link {
@@ -94,8 +113,10 @@
             }
         }
     }
+
     @media (min-width: 1367px) {
         padding: 0 5rem;
+
         .navbar-nav {
             .nav-link {
                 margin: 1rem 0 1rem 5rem;
