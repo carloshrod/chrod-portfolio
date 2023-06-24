@@ -17,7 +17,7 @@ export const projectsInfo = [
 		},
 	},
 	{
-		src: 'https://res.cloudinary.com/chrod90/image/upload/v1674237674/project-captures/screenshot-movies-app_vfvwni.jpg',
+		src: 'https://res.cloudinary.com/chrod90/image/upload/v1687636014/project-captures/screenshot-movies-app_ig6ukr.jpg',
 		title: 'PERN Stack App (CRUD)',
 		link1: {
 			label: 'Frontend',
