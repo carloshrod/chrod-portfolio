@@ -1,6 +1,19 @@
 export const projectsInfo = [
 	{
-		src: 'https://res.cloudinary.com/chrod90/image/upload/v1674326685/project-captures/screenshot-predial_rml54n.jpg',
+		src: 'https://res.cloudinary.com/chrod90/image/upload/v1708376818/project-captures/screenshots-ecadmin_cl47od.jpg',
+		title: 'Ecommerce Admin App (NextJS, Firebase)',
+		link1: {
+			label: 'Repo',
+			url: 'https://github.com/carloshrod/ecommerce-admin-app',
+		},
+		link2: {
+			label: 'Deploy',
+			url: 'https://chrod-ecommerce-admin.vercel.app/',
+			icon: 'bx bxl-netlify bx-md bx-tada-hover',
+		},
+	},
+	{
+		src: 'https://res.cloudinary.com/chrod90/image/upload/v1708379344/project-captures/screenshots-predial-app_baizzd.jpg',
 		title: 'MERN Stack App (CRUD, Auth)',
 		link1: {
 			label: 'Frontend',
