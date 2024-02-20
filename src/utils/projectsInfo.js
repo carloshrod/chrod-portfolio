@@ -13,7 +13,7 @@ export const projectsInfo = [
 		},
 	},
 	{
-		src: 'https://res.cloudinary.com/chrod90/image/upload/v1708379344/project-captures/screenshots-predial-app_baizzd.jpg',
+		src: 'https://res.cloudinary.com/chrod90/image/upload/v1708455757/project-captures/screenshots-predial-app_rn1m0x.jpg',
 		title: 'MERN Stack App (CRUD, Auth)',
 		link1: {
 			label: 'Frontend',
@@ -30,7 +30,7 @@ export const projectsInfo = [
 		},
 	},
 	{
-		src: 'https://res.cloudinary.com/chrod90/image/upload/v1687636014/project-captures/screenshot-movies-app_ig6ukr.jpg',
+		src: 'https://res.cloudinary.com/chrod90/image/upload/v1708455808/project-captures/screenshots-movies-app_steahb.jpg',
 		title: 'PERN Stack App (CRUD)',
 		link1: {
 			label: 'Frontend',
