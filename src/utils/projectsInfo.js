@@ -13,6 +13,19 @@ export const projectsInfo = [
 		},
 	},
 	{
+		src: 'https://res.cloudinary.com/chrod90/image/upload/v1710795393/project-captures/screenshots-batatabit_lh7w75.jpg',
+		title: 'Batatabit Landing Page',
+		link1: {
+			label: 'Repo',
+			url: 'https://github.com/carloshrod/batatabit-landing-page',
+		},
+		link2: {
+			label: 'Deploy',
+			url: 'https://batatabit-chrod.netlify.app/',
+			icon: 'bx bxl-netlify bx-md bx-tada-hover',
+		},
+	},
+	{
 		src: 'https://res.cloudinary.com/chrod90/image/upload/v1708455757/project-captures/screenshots-predial-app_rn1m0x.jpg',
 		title: 'MERN Stack App (CRUD, Auth)',
 		link1: {
