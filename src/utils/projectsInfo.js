@@ -1,5 +1,18 @@
 export const projectsInfo = [
 	{
+		src: 'https://res.cloudinary.com/chrod90/image/upload/v1717028888/project-captures/screenshots-vetekso_bm4319.jpg',
+		title: 'Vetek So Website',
+		link1: {
+			label: 'Repo',
+			url: 'https://github.com/carloshrod/vetekso-website',
+		},
+		link2: {
+			label: 'Deploy',
+			url: 'https://vetekso.com/',
+			icon: 'fa-solid fa-h',
+		},
+	},
+	{
 		src: 'https://res.cloudinary.com/chrod90/image/upload/v1715809512/project-captures/screenshots-pyaesa_djvdet.jpg',
 		title: 'PYAESA Website',
 		link1: {
