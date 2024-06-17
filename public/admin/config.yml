@@ -1,6 +1,7 @@
 backend:
   name: github
   branch: master
+  repo: carloshrod/chrod-portfolio
 
 publish_mode: editorial_workflow
 media_folder: "public/images" 
