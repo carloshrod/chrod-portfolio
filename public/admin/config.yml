@@ -1,0 +1,25 @@
+backend:
+  name: github
+  branch: master
+
+publish_mode: editorial_workflow
+media_folder: "public/images" 
+public_folder: "/images" 
+
+collections:
+  - label: "Projects"
+    name: "projects"
+    files:
+      - label: "Project 1"
+        name: "project1"
+        file: "projects/project1.json"
+        fields:
+          - {label: "Image", name: "src", widget: "image"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Link 1 Label", name: "link1_label", widget: "string"}
+          - {label: "Link 1 URL", name: "link1_url", widget: "string"}
+          - {label: "Link 2 Label", name: "link2_label", widget: "string"}
+          - {label: "Link 2 URL", name: "link2_url", widget: "string"}
+          - {label: "Icon Link 2", name: "link2_icon", widget: "string"}
+          - {label: "Link 3 Label", name: "link3_label", widget: "string"}
+          - {label: "Link 3 URL", name: "link3_url", widget: "string"}
