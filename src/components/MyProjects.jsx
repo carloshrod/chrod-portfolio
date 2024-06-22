@@ -11,8 +11,7 @@ import { useEffect, useState } from 'react';
 
 const MyProjects = () => {
 	const { texts } = useLanguageContext();
-
-	const [projects, setProjects] = useState([]);
+	const [slides, setSlides] = useState([]);
 
 	useEffect(() => {
 		const fetchData = async () => {
@@ -23,8 +22,19 @@ const MyProjects = () => {
 				if (!response.ok) {
 					throw new Error('Failed to fetch data');
 				}
-				const data = await response.json();
-				console.log(data);
+				const files = await response.json();
+
+				const jsonFiles = files.filter(file => file.name.endsWith('.json'));
+				const projectPromises = jsonFiles.map(async file => {
+					const fileResponse = await fetch(file.download_url);
+					if (!fileResponse.ok) {
+						throw new Error('Failed to fetch project file');
+					}
+					return await fileResponse.json();
+				});
+
+				const projectsData = await Promise.all(projectPromises);
+				setSlides(projectsData);
 			} catch (error) {
 				console.error('Error fetching data:', error);
 			}
@@ -65,15 +75,17 @@ const MyProjects = () => {
 					keyboard={{
 						enabled: true,
 					}}
-					// autoplay={{
-					// 	delay: 5000,
-					// 	disableOnInteraction: false,
-					// }}
+					autoplay={{
+						delay: 5000,
+						disableOnInteraction: false,
+					}}
 					loop={true}
 					effect='flip'
 				>
-					{Slides.map((slide, i) => (
-						<SwiperSlide key={i}>{slide}</SwiperSlide>
+					{slides.map((slide, index) => (
+						<SwiperSlide key={`slide-${index}`}>
+							<Slides slide={slide} />
+						</SwiperSlide>
 					))}
 				</Swiper>
 			</motion.div>
