@@ -7,9 +7,31 @@ import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
 import 'swiper/scss/effect-flip';
 import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
 const MyProjects = () => {
 	const { texts } = useLanguageContext();
+
+	const [projects, setProjects] = useState([]);
+
+	useEffect(() => {
+		const fetchData = async () => {
+			try {
+				const response = await fetch(
+					'https://api.github.com/repos/carloshrod/chrod-portfolio/contents/projects'
+				);
+				if (!response.ok) {
+					throw new Error('Failed to fetch data');
+				}
+				const data = await response.json();
+				console.log(data);
+			} catch (error) {
+				console.error('Error fetching data:', error);
+			}
+		};
+
+		fetchData();
+	}, []);
 
 	return (
 		<div className='my-projects-container' id='projects'>
