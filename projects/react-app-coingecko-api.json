@@ -1,0 +1,9 @@
+{
+  "src": "https://res.cloudinary.com/chrod90/image/upload/v1674769783/project-captures/screenshot-crypto-app_clszxf.jpg",
+  "title": "React App - CoinGecko API",
+  "link1_label": "Frontend",
+  "link1_url": "https://github.com/carloshrod/chrod-crypto-app",
+  "link2_label": "Deploy",
+  "link2_url": "https://chrod-crypto.vercel.app/",
+  "link2_icon": "bi bi-triangle"
+}
