@@ -1,0 +1,9 @@
+{
+  "src": "https://res.cloudinary.com/chrod90/image/upload/v1708376818/project-captures/screenshots-ecadmin_cl47od.jpg",
+  "title": "Ecommerce Admin App",
+  "link1_label": "Repo",
+  "link1_url": "https://github.com/carloshrod/ecommerce-admin-app",
+  "link2_label": "Deploy",
+  "link2_url": "https://chrod-ecommerce-admin.vercel.app/",
+  "link2_icon": "bi bi-triangle"
+}
