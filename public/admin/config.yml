@@ -12,6 +12,7 @@ collections:
     label: "Projects"
     folder: "projects"
     create: true
+    extension: "json"
     fields:
         - {label: "Image", name: "src", widget: "image"}
         - {label: "Title", name: "title", widget: "string"}
