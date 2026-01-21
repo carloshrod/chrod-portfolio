@@ -12,7 +12,10 @@ const Slides = ({ slide }) => {
 				{slide.link2_url && (
 					<div className='col link project'>
 						<a href={slide.link2_url} target='_blank' rel='noopener noreferrer'>
-							<i className={slide.link2_icon} style={{ fontSize: '1.6rem' }} />
+							<i
+								className='bx bx-link bx-md bx-tada-hover'
+								style={{ fontSize: '1.6rem' }}
+							/>
 						</a>
 						<span>{slide.link2_label}</span>
 					</div>
