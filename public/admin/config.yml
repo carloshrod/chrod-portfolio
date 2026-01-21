@@ -20,6 +20,5 @@ collections:
         - {label: "Link 1 - URL", name: "link1_url", widget: "string"}
         - {label: "Link 2 - Label", name: "link2_label", widget: "string"}
         - {label: "Link 2 - URL", name: "link2_url", widget: "string"}
-        - {label: "Link 2 - Icon", name: "link2_icon", widget: "string"}
         - {label: "Link 3 - Label", name: "link3_label", widget: "string", required: false}
         - {label: "Link 3 - URL", name: "link3_url", widget: "string", required: false}
