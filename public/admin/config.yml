@@ -14,11 +14,12 @@ collections:
     create: true
     extension: "json"
     fields:
+        - {label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD"}
         - {label: "Image", name: "src", widget: "image"}
         - {label: "Title", name: "title", widget: "string"}
         - {label: "Link 1 - Label", name: "link1_label", widget: "string"}
         - {label: "Link 1 - URL", name: "link1_url", widget: "string"}
-        - {label: "Link 2 - Label", name: "link2_label", widget: "string"}
-        - {label: "Link 2 - URL", name: "link2_url", widget: "string"}
+        - {label: "Link 2 - Label", name: "link2_label", widget: "string", required: false}
+        - {label: "Link 2 - URL", name: "link2_url", widget: "string", required: false}
         - {label: "Link 3 - Label", name: "link3_label", widget: "string", required: false}
         - {label: "Link 3 - URL", name: "link3_url", widget: "string", required: false}

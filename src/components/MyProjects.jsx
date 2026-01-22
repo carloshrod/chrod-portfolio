@@ -17,7 +17,7 @@ const MyProjects = () => {
 		const fetchData = async () => {
 			try {
 				const response = await fetch(
-					'https://api.github.com/repos/carloshrod/chrod-portfolio/contents/projects'
+					'https://api.github.com/repos/carloshrod/chrod-portfolio/contents/projects',
 				);
 				if (!response.ok) {
 					throw new Error('Failed to fetch data');
@@ -25,16 +25,47 @@ const MyProjects = () => {
 				const files = await response.json();
 
 				const jsonFiles = files.filter(file => file.name.endsWith('.json'));
+
+				// Obtener contenido del archivo y fecha del primer commit (creación)
 				const projectPromises = jsonFiles.map(async file => {
 					const fileResponse = await fetch(file.download_url);
+
 					if (!fileResponse.ok) {
-						throw new Error('Failed to fetch project file');
+						throw new Error('Failed to fetch project data');
 					}
-					return await fileResponse.json();
+
+					const projectData = await fileResponse.json();
+
+					// Obtener todos los commits del archivo para encontrar el primero
+					const commitsResponse = await fetch(
+						`https://api.github.com/repos/carloshrod/chrod-portfolio/commits?path=${file.path}&per_page=100`,
+					);
+
+					if (commitsResponse.ok) {
+						const commits = await commitsResponse.json();
+						// El último elemento del array es el primer commit (creación del archivo)
+						const firstCommitDate =
+							commits[commits.length - 1]?.commit?.author?.date;
+
+						return {
+							...projectData,
+							_creationDate: firstCommitDate,
+						};
+					}
+
+					return projectData;
 				});
 
 				const projectsData = await Promise.all(projectPromises);
-				setSlides(projectsData);
+
+				// Ordenar por fecha de creación descendente (más reciente primero)
+				const sortedProjects = projectsData.sort((a, b) => {
+					if (!a._creationDate) return 1;
+					if (!b._creationDate) return -1;
+					return new Date(b._creationDate) - new Date(a._creationDate);
+				});
+
+				setSlides(sortedProjects);
 			} catch (error) {
 				console.error('Error fetching data:', error);
 			}
@@ -63,6 +94,7 @@ const MyProjects = () => {
 				viewport={{ once: true }}
 			>
 				<Swiper
+					key={slides.length}
 					modules={[Navigation, Keyboard, Autoplay, EffectFlip]}
 					spaceBetween={20}
 					slidesPerView={1}
@@ -76,8 +108,8 @@ const MyProjects = () => {
 						enabled: true,
 					}}
 					autoplay={{
-						delay: 5000,
-						disableOnInteraction: false,
+						delay: 10000,
+						disableOnInteraction: true,
 					}}
 					loop={true}
 					effect='flip'
