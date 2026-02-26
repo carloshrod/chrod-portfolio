@@ -54,7 +54,7 @@ const PrivacyPolicy = () => {
 				<p>
 					Tienes derecho a acceder, rectificar o eliminar tus datos personales.
 					Para ejercer estos derechos, puedes contactarnos en:
-					<strong> contacto@tuapp.com</strong>.
+					<strong>cahr0912@hotmail.com</strong>.
 				</p>
 			</section>
 
@@ -63,6 +63,17 @@ const PrivacyPolicy = () => {
 				<p>
 					Podemos actualizar esta política ocasionalmente. Te recomendamos
 					revisarla periódicamente para estar informado de cualquier cambio.
+				</p>
+			</section>
+
+			<section>
+				<h2>8. Uso de datos de plataformas de Meta</h2>
+				<p>
+					Nuestra aplicación n8n-social-media puede acceder a información básica
+					de perfil y otros datos autorizados a través de las APIs de Meta
+					(Facebook, Instagram y WhatsApp). Estos datos se utilizan
+					exclusivamente para las funcionalidades autorizadas por el usuario y
+					no se comparten con terceros.
 				</p>
 			</section>
 		</div>
