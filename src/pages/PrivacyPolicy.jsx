@@ -53,7 +53,7 @@ const PrivacyPolicy = () => {
 				<h2>6. Derechos del usuario</h2>
 				<p>
 					Tienes derecho a acceder, rectificar o eliminar tus datos personales.
-					Para ejercer estos derechos, puedes contactarnos en:
+					Para ejercer estos derechos, puedes contactarnos en:{' '}
 					<strong>cahr0912@hotmail.com</strong>.
 				</p>
 			</section>
